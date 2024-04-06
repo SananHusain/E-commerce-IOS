@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCollectionViewCell" id="gTV-IL-0wX" customClass="HomeCollectionViewCell" customModule="UI_Design" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="170" height="248"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="170" height="248"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shirt1" translatesAutoresizingMaskIntoConstraints="NO" id="6KC-Hc-1xb">
+                        <rect key="frame" x="10" y="10" width="150" height="207"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nng-te-OFK">
+                        <rect key="frame" x="10" y="227" width="150" height="15"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="NIQ-Cj-idG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Nng-te-OFK" secondAttribute="bottom" constant="6" id="46y-48-bDe"/>
+                <constraint firstItem="Nng-te-OFK" firstAttribute="trailing" secondItem="6KC-Hc-1xb" secondAttribute="trailing" id="H4R-t0-Gyq"/>
+                <constraint firstItem="6KC-Hc-1xb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="Ujo-YI-DDP"/>
+                <constraint firstItem="Nng-te-OFK" firstAttribute="top" secondItem="6KC-Hc-1xb" secondAttribute="bottom" constant="10" id="f1w-iT-6jD"/>
+                <constraint firstItem="6KC-Hc-1xb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="nPX-SA-qT0"/>
+                <constraint firstItem="Nng-te-OFK" firstAttribute="leading" secondItem="6KC-Hc-1xb" secondAttribute="leading" id="tld-Id-PtA"/>
+                <constraint firstAttribute="trailing" secondItem="6KC-Hc-1xb" secondAttribute="trailing" constant="10" id="uae-97-BdL"/>
+            </constraints>
+            <size key="customSize" width="170" height="248"/>
+            <connections>
+                <outlet property="productImage" destination="6KC-Hc-1xb" id="ts3-CL-4GI"/>
+                <outlet property="productName" destination="Nng-te-OFK" id="db8-gD-A9j"/>
+            </connections>
+            <point key="canvasLocation" x="83.969465648854964" y="55.633802816901408"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="shirt1" width="830" height="1102"/>
+    </resources>
+</document>
